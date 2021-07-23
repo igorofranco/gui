@@ -1,0 +1,26 @@
+/* global */
+p{
+  line-height: 2em;
+}
+
+/* Section 01 */
+ul.main-list{
+  margin: 2em auto;
+  display: flex;
+  flex-direction: column;
+  gap: 1.5em;
+}
+ul.main-list > li{
+  display: flex;
+}
+ul.main-list > li > div:nth-of-type(1){
+  width: 2.25em;
+  display: flex;
+  flex-direction: column;
+  justify-content: flex-start;
+  align-items: center;
+  font-size: 2em;
+}
+ul.main-list > li > div:nth-of-type(2) > h3{
+  margin: .25em auto .5em auto;
+}
