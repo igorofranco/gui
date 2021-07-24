@@ -20,7 +20,8 @@ div.container{
   max-width: calc(100% - 5em);
 }
 img{
-  max-width: 100%;
+  width: 100%;
+  height: auto;
 }
 
 /* Section 01 */
