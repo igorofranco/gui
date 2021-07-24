@@ -163,6 +163,9 @@ section#contacts{
   #main > main > div.container > div:nth-of-type(2) img{
     margin: 0 0 0 1em;
   }
+  #main ul h3{
+    font-size: 1em;
+  }
   /* CONTACTS */
   #contacts ul{
     display: grid;
