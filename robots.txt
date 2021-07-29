@@ -1,6 +1,7 @@
 User-agent: *
 Allow: /
+
+User-agent: Twitterbot
+Disallow: *
+
 Allow: /assets/img
-Disallow: /assets/
-Disallow: /assets/css/
-Disallow: /assets/fontawesome/
