@@ -1,6 +1,6 @@
 User-agent: *
 Allow: /
+Allow: /assets/img
 Disallow: /assets/
 Disallow: /assets/css/
-Disallow: /assets/img/
 Disallow: /assets/fontawesome/
