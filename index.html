@@ -33,6 +33,11 @@
   <style>
     @import url('https://fonts.googleapis.com/css2?family=Poppins:wght@700&family=Work+Sans:ital@0;1&display=swap');
     /* global */
+    :root{
+      --orange:#d46438;
+      --green:#497651;
+      --light-green:#74a36a;
+    }
     body{
       background-color: #f7fff8;
     }
@@ -41,7 +46,7 @@
     }
     h1,h2,h3,h4,h5,h6,
     i{
-      color: #d46438;
+      color: var(--orange);
     }
     p{
       font-family: 'Work Sans',sans-serif;
@@ -78,20 +83,17 @@
       padding: .125em 0 0 0;
       font-size: 1.667em;
     }
-    ul.main-list h3{
-
-    }
 
     /* Última seção */
-    section#contacts{
+    aside#contacts{
       padding: 2em 0;
       background-color: #e8e8e8;
     }
     #contacts ul{
       margin: 2em auto;
       width: 100%;
-      background-color: #497651;
-      color: white;
+      background-color: var(--green);
+      color: #ffffff;
       display: flex;
       flex-direction: column;
       padding: 0;
@@ -123,14 +125,14 @@
       border-radius: 50%;
       width: 5em;
       height: 5em;
-      background-color: #74a36a;
+      background-color: var(--light-green);
     }
     #contacts i{
       font-size: 2.5em;
     }
     #contacts h4,
     #contacts i {
-      color: white;
+      color: #ffffff;
     }
 
 
@@ -145,7 +147,7 @@
       transition: 100ms;
     }
     #footer i:hover{
-      color: #d46438;
+      color: var(--orange);
     }
     #footer > div:nth-of-type(1){
       padding: .5em 0;
@@ -181,6 +183,10 @@
     #footer > div:nth-of-type(1) > div:nth-of-type(2) div:nth-of-type(1) a:hover{
       color: #ecdc1c;
     }
+    #crm{
+      font-size: .9rem;
+      font-weight: 200;
+    }
 
     @media only screen and (min-width: 720px) {
       /* MAIN */
@@ -207,12 +213,21 @@
         flex-direction: row;
         justify-content: space-between;
       }
+      #footer > div:nth-of-type(1) > div:nth-of-type(1){
+        display: flex;
+        align-items: center;
+        gap: .75em;
+      }
+      #crm{
+        font-size: .75rem;
+        font-weight: 400;
+        text-align: left;
+      }
       #footer > div:nth-of-type(1) > div:nth-of-type(2){
         flex-direction: row;
         align-items: center;
       }
     }
-
   </style>
 </head>
 <body>
@@ -248,7 +263,7 @@
 </main>
 
 
-<section id="contacts">
+<aside id="contacts">
   <header>
     <div class="container">
       <h2>Estamos juntos!</h2>
@@ -302,11 +317,14 @@
       </ul>
     </div>
   </main>
-</section>
+</aside>
 
 <footer id="footer">
   <div class="container">
-    <div>Guilherme Navarro</div>
+    <div>
+      <div>Guilherme Navarro</div>
+      <div id="crm">CRM: 69463-MG<br>RQE: 47177 | 51811</div>
+    </div>
     <div>
       <div title="Site desenvolvido, hospedado e desenhado por Igor Franco">
         Designed by <a href="https://www.instagram.com/igorspn/" target="_blank" referrerpolicy="no-referrer" rel="nofollow">Igor Franco</a>
