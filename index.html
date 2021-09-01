@@ -26,9 +26,10 @@
   <link rel="canonical" href="https://guilhermenavarro.med.br/">
 
   <style>
-    body,h1,h2,h3,h4,h5,h6,p,ul,li{margin: 0;padding: 0;box-sizing: border-box;font-family: sans-serif;}
-    ul,li{list-style: none;}
-    a{color: inherit;text-decoration: none;}
+    *,*::before,*::after{box-sizing:border-box;}
+    body,h1,h2,h3,h4,h5,h6,p,ul,li{margin:0;padding:0;font-family:sans-serif;}
+    ul,li{list-style:none;}
+    a{color:inherit;text-decoration:none;}
   </style>
   <style>
     @import url('https://fonts.googleapis.com/css2?family=Poppins:wght@700&family=Work+Sans:ital@0;1&display=swap');
@@ -53,7 +54,7 @@
       color: #575757;
       line-height: 1.8em;
     }
-    div.container{
+    .container{
       margin: auto;
       width: 920px;
       max-width: calc(100% - 5em);
@@ -65,7 +66,9 @@
 
     /* Section 01 */
     body > main:first-of-type{
-      margin: 2em auto 0 auto;
+      margin: 0;
+      padding: 2em 0 3.5em 0;
+      background-color: #eee;
     }
     ul.main-list{
       margin: 2em auto;
@@ -82,6 +85,31 @@
     ul.main-list i{
       padding: .125em 0 0 0;
       font-size: 1.667em;
+    }
+
+    /* MIDDLE SECTION */
+    #specialties{
+      margin: 0;
+      padding: 3.5em 0;
+      text-align: center;
+    }
+    #specialties img{
+      object-fit: cover;
+      width: 42%;
+      border-radius: 1em 0 1em 0;
+    }
+    #specialties p{
+      line-height: 1.25em;
+    }
+    #specialties ul{
+      display: flex;
+      flex-direction: column;
+      gap: 6em;
+    }
+    #specialties ul > li{
+      display: flex;
+      flex-direction: column-reverse;
+      gap: 1em;
     }
 
     /* Última seção */
@@ -134,7 +162,6 @@
     #contacts i {
       color: #ffffff;
     }
-
 
     /* Footer */
     #footer{
@@ -202,6 +229,33 @@
       #main ul h3{
         font-size: 1em;
       }
+
+      /* SPECIALTIES */
+      #specialties{
+        padding: 5em 0;
+      }
+      #specialties ul{
+        margin: auto;
+      }
+      #specialties img{
+        min-width: 100%;
+      }
+      #specialties ul > li{
+        gap: 3em;
+        flex-direction: row;
+        align-items: center;
+      }
+      #specialties h2{
+        margin: 0 0 1em 0;
+      }
+      #specialties li > div:nth-of-type(1){
+        width: 65%;
+        text-align: right;
+      }
+      #specialties li > div:nth-of-type(2){
+        width: 35%;
+      }
+
       /* CONTACTS */
       #contacts ul{
         display: grid;
@@ -262,6 +316,31 @@
   </main>
 </main>
 
+<section id="specialties">
+  <ul class="container">
+    <li>
+      <div>
+        <h2>Psiquiatria</h2>
+        <p>A Psiquiatria é uma das primeiras especialidades médicas a surgir. Deriva do termo grego Psychē, que significa alma, mente. Seu foco são as patologias que alteram o comportamento humano, causando sofrimento psíquico importante e frequente perda funcional. É prática complementar da Saúde Mental, área multidisciplinar que engloba Psicologia, Assistência Social, Terapia Ocupacional, Enfermagem, Fonoaudiologia, dentre outras.</p>
+      </div>
+      <div><img src="./assets/img/psiquiatria-guilherme-navarro.jpeg" alt="Psiquiatria, Guilherme Navarro" height="400" width="400"></div>
+    </li>
+    <li>
+      <div>
+        <h2>Psiquiatria Forense</h2>
+        <p>A Psiquiatria Forense é uma área de atuação da Psiquiatria em profunda proximidade com o Direito. Propõe auxiliar o juízo sobre questões de saúde mental e adoecimento psíquico através de avaliações e laudos periciais. A proficiência clinica e científica é aplicada a temas e a contextos legais, envolvendo tópicos criminais, cíveis, trabalhistas, familiares, previdenciários, dentre outros.</p>
+      </div>
+      <div><img src="./assets/img/psiquiatria-forense-guilherme-navarro.jpeg" alt="Psiquiatria Forense, Guilherme Navarro" height="400" width="400"></div>
+    </li>
+    <li>
+      <div>
+        <h2>Psicoeducação</h2>
+        <p>A psicoeducação é uma intervenção terapêutica baseada em evidências que se propõe a auxiliar pacientes e seus vínculos mais próximos com as informações importantes para a compreensão dos adoecimentos psíquicos, desenvolvendo-se um trabalho de prevenção e conscientização em saúde mental.</p>
+      </div>
+      <div><img src="./assets/img/psicoeducação-guilherme-navarro.jpeg" alt="Psicoeducação, Guilherme Navarro" height="400" width="400"></div>
+    </li>
+  </ul>
+</section>
 
 <aside id="contacts">
   <header>
@@ -327,7 +406,7 @@
     </div>
     <div>
       <div title="Site desenvolvido, hospedado e desenhado por Igor Franco">
-        Designed by <a href="https://www.instagram.com/igorspn/" target="_blank" referrerpolicy="no-referrer" rel="nofollow">Igor Franco</a>
+        Designed by <a href="https://igorfranco.com.br" target="_blank" referrerpolicy="no-referrer" rel="nofollow">Igor Franco</a>
       </div>
       <ul>
         <li>
